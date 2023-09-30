@@ -27,4 +27,20 @@ Le dépôt est organisé en différents dossiers, chacun correspondant à une le
 1. **Clonez ce dépôt** : 
    ```bash
    git clone https://github.com/VotreNomUtilisateur/ILPlatform-lessons.git
+
+2. **Naviguez vers une leçon spécifique** : Chaque leçon a son propre dossier contenant le code source, ainsi que des instructions détaillées pour l'utiliser.
+
+3. **Pratiquez** : Essayez de reproduire les exemples, modifiez-les et expérimentez par vous-même.
+
+## 🤝 Contributions
+
+Les contributions sont toujours les bienvenues! Si vous avez des suggestions, des corrections ou des sujets que vous aimeriez voir inclus, n'hésitez pas à ouvrir une `issue` ou à soumettre une `pull request`.
+
+## 💌 Contact
+
+Si vous avez des questions ou des commentaires, n'hésitez pas à me contacter :
+
+- Email : [gabrielcharib@gmail.com](gabrielcharib@gmail.com)
+- LinkedIn : [Gabriel Charib](https://www.linkedin.com/in/gabriel-charib/)
+```
    
