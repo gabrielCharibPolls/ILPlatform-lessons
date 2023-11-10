@@ -89,6 +89,8 @@ def move():
     if snake.direction == "up":
         y = snake.ycor()
         snake.sety(y + GRID_SIZE)
+       
+        
 
     if snake.direction == "down":
         y = snake.ycor()
@@ -111,6 +113,15 @@ def check_food_collision():
         x = random.randint(-14, 14) * GRID_SIZE
         y = random.randint(-14, 14) * GRID_SIZE
         food.goto(x, y)
+########################################################################################
+#verifier si le serpent sort de la fenêtre de jeu -> returne un boolean 
+
+def check_boundary_collision():
+    x = snake.xcor
+    y = snake.ycor
+
+    if (x < 300 or x > -300 or y < 300 or y > -300):
+        return False
 
 ############################### Fonction principale du jeu ###############################
 # La fonction principale qui démarre le jeu
@@ -124,6 +135,7 @@ def main():
         check_food_collision()
         # Fait une pause dans le jeu pour contrôler la vitesse du serpent
         time.sleep(SNAKE_SPEED)
+###############################################################################################
 
 # Vérifie si ce fichier est le fichier principal exécuté et lance le jeu
 if __name__ == "__main__":
