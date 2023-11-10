@@ -122,7 +122,23 @@ def check_boundary_collision():
 
     if (x < 300 or x > -300 or y < 300 or y > -300):
         return False
+    
 
+############################### Affiche le message Game Over ###############################
+def game_over():
+    # Efface le serpent et la nourriture
+    snake.hideturtle()
+    food.hideturtle()
+    
+    # Affiche le message Game Over
+    wn.clear()
+    wn.bgcolor("black")
+    game_over_turtle = turtle.Turtle()
+    game_over_turtle.color("white")
+    game_over_turtle.penup()
+    game_over_turtle.hideturtle()
+    game_over_turtle.goto(0, 0)
+    game_over_turtle.write("Game Over", align="center", font=("Courier", 24, "normal"))
 ############################### Fonction principale du jeu ###############################
 # La fonction principale qui démarre le jeu
 def main():
