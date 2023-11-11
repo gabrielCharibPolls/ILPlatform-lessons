@@ -120,8 +120,10 @@ def check_boundary_collision():
     x = snake.xcor
     y = snake.ycor
 
-    if (x < 300 or x > -300 or y < 300 or y > -300):
-        return False
+    if x > 290 or x < -290 or y > 290 or y < -290:
+        game_over()  # Affiche le message Game Over
+        return True
+    return False
     
 
 ############################### Affiche le message Game Over ###############################
@@ -149,7 +151,10 @@ def main():
         move()
         # Vérifie si le serpent a mangé la nourriture
         check_food_collision()
+        check_boundary_collision()
         # Fait une pause dans le jeu pour contrôler la vitesse du serpent
+        if check_boundary_collision():
+            break
         time.sleep(SNAKE_SPEED)
 ###############################################################################################
 
